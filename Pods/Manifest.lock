@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (4.7.0)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - expanding-collection (2.0.0)
+  - RAMAnimatedTabBarController (3.0.4)
+  - SwiftyJSON (4.0.0)
+  - TextFieldEffects (1.4.0)
+  - TransitionButton (0.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - expanding-collection
+  - RAMAnimatedTabBarController
+  - SwiftyJSON
+  - TextFieldEffects
+  - TransitionButton
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  expanding-collection: bd73e94cc3bd97d242d333ee61487d8823d652b6
+  RAMAnimatedTabBarController: f4df798eb3f374b80448908d3a18586421efb8f6
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+  TransitionButton: 0bf7e5ffe80030f9d10d57983a04acf2f511998a
+
+PODFILE CHECKSUM: 6af004c940fe45e070069092eef599a36ac98cf6
+
+COCOAPODS: 1.4.0

@@ -14,7 +14,7 @@ class API {
     class func login(email: String, password: String, completion: @escaping (_ error: Error?, _ success: Bool)->Void) {
         
         
-        let url = "https://monivulation.azurewebsites.net/login"
+        let url = "https://monivulation.azurewebsites.net"
         
         let parameters = [
             "email": email,

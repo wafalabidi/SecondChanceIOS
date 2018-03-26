@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B19FA12595E9C7DF1DB22E9 /* Pods_SecondChance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CC323DF24BB0AFF9FD2571 /* Pods_SecondChance.framework */; };
 		4024CAD32056F1220051836E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4024CAD22056F1220051836E /* AppDelegate.swift */; };
 		4024CAD52056F1220051836E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4024CAD42056F1220051836E /* ViewController.swift */; };
 		4024CAD82056F1220051836E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4024CAD62056F1220051836E /* Main.storyboard */; };
-		4024CADB2056F1230051836E /* SecondChance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4024CAD92056F1220051836E /* SecondChance.xcdatamodeld */; };
 		4024CADD2056F1230051836E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4024CADC2056F1230051836E /* Assets.xcassets */; };
 		4024CAE02056F1230051836E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4024CADE2056F1230051836E /* LaunchScreen.storyboard */; };
+		40450B952059131D00377FCA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40450B942059131D00377FCA /* API.swift */; };
+		408C9F6B20587A4D006F67EE /* PagerIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C9F6A20587A4D006F67EE /* PagerIntroViewController.swift */; };
+		408C9F6D20587C76006F67EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C9F6C20587C76006F67EE /* LoginViewController.swift */; };
+		408C9F702058C809006F67EE /* Jelytta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 408C9F6F2058C809006F67EE /* Jelytta.ttf */; };
+		408C9F722058CA39006F67EE /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C9F712058CA39006F67EE /* SignupViewController.swift */; };
+		408C9F742058D7D5006F67EE /* PorfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C9F732058D7D5006F67EE /* PorfileViewController.swift */; };
+		408C9F762058D7DE006F67EE /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C9F752058D7DE006F67EE /* MessageViewController.swift */; };
+		408C9F782058D7EC006F67EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C9F772058D7EC006F67EE /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +28,20 @@
 		4024CAD22056F1220051836E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4024CAD42056F1220051836E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4024CAD72056F1220051836E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4024CADA2056F1220051836E /* SecondChance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SecondChance.xcdatamodel; sourceTree = "<group>"; };
 		4024CADC2056F1230051836E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4024CADF2056F1230051836E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4024CAE12056F1230051836E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40450B942059131D00377FCA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		408C9F6A20587A4D006F67EE /* PagerIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerIntroViewController.swift; sourceTree = "<group>"; };
+		408C9F6C20587C76006F67EE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		408C9F6F2058C809006F67EE /* Jelytta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Jelytta.ttf; sourceTree = "<group>"; };
+		408C9F712058CA39006F67EE /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		408C9F732058D7D5006F67EE /* PorfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorfileViewController.swift; sourceTree = "<group>"; };
+		408C9F752058D7DE006F67EE /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		408C9F772058D7EC006F67EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		41748A2EAFA981699AB1DC73 /* Pods-SecondChance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondChance.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance.release.xcconfig"; sourceTree = "<group>"; };
+		A7CC323DF24BB0AFF9FD2571 /* Pods_SecondChance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecondChance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B3031D893A9BD685F4C014 /* Pods-SecondChance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondChance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B19FA12595E9C7DF1DB22E9 /* Pods_SecondChance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 			children = (
 				4024CAD12056F1220051836E /* SecondChance */,
 				4024CAD02056F1220051836E /* Products */,
+				B8C39746ADD733130754D3AB /* Pods */,
+				55F6CBCBC043A4A0AB5A0A1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,87 @@
 		4024CAD12056F1220051836E /* SecondChance */ = {
 			isa = PBXGroup;
 			children = (
+				408C9F6920587A0F006F67EE /* Model */,
+				408C9F68205879FB006F67EE /* API */,
+				408C9F67205879EC006F67EE /* View */,
+				408C9F66205879D3006F67EE /* Storyboards */,
+				408C9F65205879BE006F67EE /* ViewControllers */,
 				4024CAD22056F1220051836E /* AppDelegate.swift */,
-				4024CAD42056F1220051836E /* ViewController.swift */,
-				4024CAD62056F1220051836E /* Main.storyboard */,
 				4024CADC2056F1230051836E /* Assets.xcassets */,
-				4024CADE2056F1230051836E /* LaunchScreen.storyboard */,
 				4024CAE12056F1230051836E /* Info.plist */,
-				4024CAD92056F1220051836E /* SecondChance.xcdatamodeld */,
 			);
 			path = SecondChance;
+			sourceTree = "<group>";
+		};
+		408C9F65205879BE006F67EE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4024CAD42056F1220051836E /* ViewController.swift */,
+				408C9F6A20587A4D006F67EE /* PagerIntroViewController.swift */,
+				408C9F6C20587C76006F67EE /* LoginViewController.swift */,
+				408C9F712058CA39006F67EE /* SignupViewController.swift */,
+				408C9F732058D7D5006F67EE /* PorfileViewController.swift */,
+				408C9F752058D7DE006F67EE /* MessageViewController.swift */,
+				408C9F772058D7EC006F67EE /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		408C9F66205879D3006F67EE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4024CAD62056F1220051836E /* Main.storyboard */,
+				4024CADE2056F1230051836E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		408C9F67205879EC006F67EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				408C9F6E2058C7CF006F67EE /* Font */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		408C9F68205879FB006F67EE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				40450B942059131D00377FCA /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		408C9F6920587A0F006F67EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		408C9F6E2058C7CF006F67EE /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				408C9F6F2058C809006F67EE /* Jelytta.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		55F6CBCBC043A4A0AB5A0A1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7CC323DF24BB0AFF9FD2571 /* Pods_SecondChance.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8C39746ADD733130754D3AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0B3031D893A9BD685F4C014 /* Pods-SecondChance.debug.xcconfig */,
+				41748A2EAFA981699AB1DC73 /* Pods-SecondChance.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4024CAE42056F1230051836E /* Build configuration list for PBXNativeTarget "SecondChance" */;
 			buildPhases = (
+				BD0F55BD171154E9F2ABC2C4 /* [CP] Check Pods Manifest.lock */,
 				4024CACB2056F1220051836E /* Sources */,
 				4024CACC2056F1220051836E /* Frameworks */,
 				4024CACD2056F1220051836E /* Resources */,
+				387BDD365FF63C9C1A799605 /* [CP] Embed Pods Frameworks */,
+				0B2D58E37FB03AEDAF5E4F0D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408C9F702058C809006F67EE /* Jelytta.ttf in Resources */,
 				4024CAE02056F1230051836E /* LaunchScreen.storyboard in Resources */,
 				4024CADD2056F1230051836E /* Assets.xcassets in Resources */,
 				4024CAD82056F1220051836E /* Main.storyboard in Resources */,
@@ -134,14 +231,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B2D58E37FB03AEDAF5E4F0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		387BDD365FF63C9C1A799605 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
+				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD0F55BD171154E9F2ABC2C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecondChance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4024CACB2056F1220051836E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408C9F742058D7D5006F67EE /* PorfileViewController.swift in Sources */,
+				408C9F6D20587C76006F67EE /* LoginViewController.swift in Sources */,
 				4024CAD52056F1220051836E /* ViewController.swift in Sources */,
-				4024CADB2056F1230051836E /* SecondChance.xcdatamodeld in Sources */,
+				408C9F782058D7EC006F67EE /* HomeViewController.swift in Sources */,
+				408C9F722058CA39006F67EE /* SignupViewController.swift in Sources */,
+				408C9F6B20587A4D006F67EE /* PagerIntroViewController.swift in Sources */,
 				4024CAD32056F1220051836E /* AppDelegate.swift in Sources */,
+				40450B952059131D00377FCA /* API.swift in Sources */,
+				408C9F762058D7DE006F67EE /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +445,7 @@
 		};
 		4024CAE52056F1230051836E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B3031D893A9BD685F4C014 /* Pods-SecondChance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +460,7 @@
 		};
 		4024CAE62056F1230051836E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41748A2EAFA981699AB1DC73 /* Pods-SecondChance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -324,19 +495,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		4024CAD92056F1220051836E /* SecondChance.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4024CADA2056F1220051836E /* SecondChance.xcdatamodel */,
-			);
-			currentVersion = 4024CADA2056F1220051836E /* SecondChance.xcdatamodel */;
-			path = SecondChance.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 4024CAC72056F1220051836E /* Project object */;
 }

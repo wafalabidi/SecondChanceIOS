@@ -7,12 +7,13 @@
 //
 
 import UIKit
-import expanding_collection
 
 
 class HomeViewController: UIViewController {
     //MARK: OUTLET
     @IBOutlet weak var frontContainerView: UIView!
+    
+   
     
     
     override func viewDidLoad() {

@@ -11,7 +11,6 @@ import TransitionButton
 import RAMAnimatedTabBarController
 class LoginViewController: UIViewController {
     //MARK:Prepreties
-    private let backGroundArray = [ #imageLiteral(resourceName: "couple1"), #imageLiteral(resourceName: "Happy-Couple-app-579e5e9f3df78c32768a8cce-2"), #imageLiteral(resourceName: "couple")]
     private var idx: Int = 0
    
     //MARK : Outlets
@@ -42,25 +41,18 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Visual Effect View for background
         let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.dark)) as UIVisualEffectView
         visualEffectView.frame = self.view.frame
-        visualEffectView.alpha = 0.5
-        imageView.image = #imageLiteral(resourceName: "Happy-Couple-app-579e5e9f3df78c32768a8cce-2")
+        visualEffectView.alpha = 0.6
+        imageView.startAnimating()
         imageView.addSubview(visualEffectView)
+        
+  
+      
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        Timer.scheduledTimer(timeInterval: 6, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
-    }
-    
-    //MARK: Public Functions
-    @objc func changeImage(){
-        idx = (idx+1) % backGroundArray.count
-        let toImage = backGroundArray[idx]
-        UIView.transition(with: self.imageView, duration: 0.01, options: .transitionCrossDissolve, animations: {self.imageView.image = toImage}, completion: nil)
-    }
+
 
 
 }

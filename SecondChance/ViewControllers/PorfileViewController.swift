@@ -7,26 +7,11 @@
 //
 
 import UIKit
-import expanding_collection
 
 class PorfileViewController: UIViewController{
-    
-    @IBOutlet weak var profileImageView: UIImageView!
-    
-    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        //Image Shape
-        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2
-        self.profileImageView.clipsToBounds = true
+        super .viewDidLoad()
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+  
     
 }
-

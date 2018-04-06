@@ -21,17 +21,18 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var birthdayText: HoshiTextField!
     //MARK: ACtions
     
+    @IBAction func cancelButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    @IBAction func nextButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+        let secondViewController:FirstLoginViewController = FirstLoginViewController()
+        self.present(secondViewController, animated: true, completion: nil)
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Visual Effect View for background
-        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.dark)) as UIVisualEffectView
-        visualEffectView.frame = self.view.frame
-        visualEffectView.alpha = 0.5
-        imageView.image = #imageLiteral(resourceName: "Happy-Couple-app-579e5e9f3df78c32768a8cce-2")
-        imageView.addSubview(visualEffectView)
         
         createDatePicker()
     }

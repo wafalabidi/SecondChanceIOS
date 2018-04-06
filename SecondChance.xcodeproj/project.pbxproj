@@ -21,6 +21,15 @@
 		408C9F742058D7D5006F67EE /* PorfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C9F732058D7D5006F67EE /* PorfileViewController.swift */; };
 		408C9F762058D7DE006F67EE /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C9F752058D7DE006F67EE /* MessageViewController.swift */; };
 		408C9F782058D7EC006F67EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C9F772058D7EC006F67EE /* HomeViewController.swift */; };
+		40965F66206D138400F42419 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40965F65206D138400F42419 /* FirstLoginViewController.swift */; };
+		40A6E107206FE88D00C7F90F /* ImageGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6E106206FE88D00C7F90F /* ImageGrid.swift */; };
+		40A6E10B206FEB4200C7F90F /* w.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A6E10A206FEB4200C7F90F /* w.xib */; };
+		40A870AF2077867300F1AC3B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A870AE2077867300F1AC3B /* Config.swift */; };
+		40BA6D372072B44E0093BFD1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA6D362072B44E0093BFD1 /* User.swift */; };
+		40BA6D392072B49E0093BFD1 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA6D382072B49E0093BFD1 /* Message.swift */; };
+		40BA6D3C2072B50A0093BFD1 /* Helper Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA6D3B2072B50A0093BFD1 /* Helper Files.swift */; };
+		40BA6D3E2072B5530093BFD1 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA6D3D2072B5530093BFD1 /* Conversation.swift */; };
+		40BA6D402072B9DE0093BFD1 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA6D3F2072B9DE0093BFD1 /* MessageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +48,18 @@
 		408C9F732058D7D5006F67EE /* PorfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorfileViewController.swift; sourceTree = "<group>"; };
 		408C9F752058D7DE006F67EE /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		408C9F772058D7EC006F67EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		40965F65206D138400F42419 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
+		40965F69206E5F7200F42419 /* MavenPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Bold.ttf"; sourceTree = "<group>"; };
+		40965F6A206E5F7400F42419 /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Medium.ttf"; sourceTree = "<group>"; };
+		40965F6B206E5F7700F42419 /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Regular.ttf"; sourceTree = "<group>"; };
+		40A6E106206FE88D00C7F90F /* ImageGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGrid.swift; sourceTree = "<group>"; };
+		40A6E10A206FEB4200C7F90F /* w.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = w.xib; sourceTree = "<group>"; };
+		40A870AE2077867300F1AC3B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		40BA6D362072B44E0093BFD1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		40BA6D382072B49E0093BFD1 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		40BA6D3B2072B50A0093BFD1 /* Helper Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper Files.swift"; sourceTree = "<group>"; };
+		40BA6D3D2072B5530093BFD1 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		40BA6D3F2072B9DE0093BFD1 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		41748A2EAFA981699AB1DC73 /* Pods-SecondChance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondChance.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance.release.xcconfig"; sourceTree = "<group>"; };
 		A7CC323DF24BB0AFF9FD2571 /* Pods_SecondChance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecondChance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B3031D893A9BD685F4C014 /* Pods-SecondChance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondChance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +98,7 @@
 		4024CAD12056F1220051836E /* SecondChance */ = {
 			isa = PBXGroup;
 			children = (
+				40BA6D3A2072B4F70093BFD1 /* Helper Files */,
 				408C9F6920587A0F006F67EE /* Model */,
 				408C9F68205879FB006F67EE /* API */,
 				408C9F67205879EC006F67EE /* View */,
@@ -99,6 +121,9 @@
 				408C9F732058D7D5006F67EE /* PorfileViewController.swift */,
 				408C9F752058D7DE006F67EE /* MessageViewController.swift */,
 				408C9F772058D7EC006F67EE /* HomeViewController.swift */,
+				40965F65206D138400F42419 /* FirstLoginViewController.swift */,
+				40A6E106206FE88D00C7F90F /* ImageGrid.swift */,
+				40BA6D3F2072B9DE0093BFD1 /* MessageTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -108,6 +133,7 @@
 			children = (
 				4024CAD62056F1220051836E /* Main.storyboard */,
 				4024CADE2056F1230051836E /* LaunchScreen.storyboard */,
+				40A6E10A206FEB4200C7F90F /* w.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -124,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				40450B942059131D00377FCA /* API.swift */,
+				40A870AE2077867300F1AC3B /* Config.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -131,6 +158,9 @@
 		408C9F6920587A0F006F67EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				40BA6D362072B44E0093BFD1 /* User.swift */,
+				40BA6D382072B49E0093BFD1 /* Message.swift */,
+				40BA6D3D2072B5530093BFD1 /* Conversation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,9 +168,20 @@
 		408C9F6E2058C7CF006F67EE /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				40965F69206E5F7200F42419 /* MavenPro-Bold.ttf */,
+				40965F6A206E5F7400F42419 /* MavenPro-Medium.ttf */,
+				40965F6B206E5F7700F42419 /* MavenPro-Regular.ttf */,
 				408C9F6F2058C809006F67EE /* Jelytta.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		40BA6D3A2072B4F70093BFD1 /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				40BA6D3B2072B50A0093BFD1 /* Helper Files.swift */,
+			);
+			path = "Helper Files";
 			sourceTree = "<group>";
 		};
 		55F6CBCBC043A4A0AB5A0A1A /* Frameworks */ = {
@@ -226,6 +267,7 @@
 				4024CAE02056F1230051836E /* LaunchScreen.storyboard in Resources */,
 				4024CADD2056F1230051836E /* Assets.xcassets in Resources */,
 				4024CAD82056F1220051836E /* Main.storyboard in Resources */,
+				40A6E10B206FEB4200C7F90F /* w.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +302,7 @@
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
-				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
+				"${BUILT_PRODUCTS_DIR}/WARangeSlider/WARangeSlider.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -270,7 +312,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WARangeSlider.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -305,10 +347,18 @@
 				408C9F742058D7D5006F67EE /* PorfileViewController.swift in Sources */,
 				408C9F6D20587C76006F67EE /* LoginViewController.swift in Sources */,
 				4024CAD52056F1220051836E /* ViewController.swift in Sources */,
+				40BA6D3E2072B5530093BFD1 /* Conversation.swift in Sources */,
+				40A870AF2077867300F1AC3B /* Config.swift in Sources */,
 				408C9F782058D7EC006F67EE /* HomeViewController.swift in Sources */,
+				40BA6D3C2072B50A0093BFD1 /* Helper Files.swift in Sources */,
 				408C9F722058CA39006F67EE /* SignupViewController.swift in Sources */,
 				408C9F6B20587A4D006F67EE /* PagerIntroViewController.swift in Sources */,
 				4024CAD32056F1220051836E /* AppDelegate.swift in Sources */,
+				40965F66206D138400F42419 /* FirstLoginViewController.swift in Sources */,
+				40BA6D372072B44E0093BFD1 /* User.swift in Sources */,
+				40BA6D392072B49E0093BFD1 /* Message.swift in Sources */,
+				40A6E107206FE88D00C7F90F /* ImageGrid.swift in Sources */,
+				40BA6D402072B9DE0093BFD1 /* MessageTableViewCell.swift in Sources */,
 				40450B952059131D00377FCA /* API.swift in Sources */,
 				408C9F762058D7DE006F67EE /* MessageViewController.swift in Sources */,
 			);

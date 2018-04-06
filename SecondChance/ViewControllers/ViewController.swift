@@ -10,12 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    //MARK: OUTLETS
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    //MARK: BUTTONS
 
-    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBAction func signUp(_ sender: UIButton) {
+        signUpButton.isHidden = true
+        loginButton.isHidden = true
+    }
+    
+    @IBAction func login(_ sender: UIButton) {
+        signUpButton.isHidden = true
+        loginButton.isHidden = true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
     }
 
 

@@ -8,14 +8,16 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
-class API {
+
+class API: NSObject {
     
     class func login(email: String, password: String, completion: @escaping (_ error: Error?, _ success: Bool)->Void) {
         
         
-        let url = "https://monivulation.azurewebsites.net"
-        
+        let url = URLS.login
+
         let parameters = [
             "email": email,
             "password": password
@@ -42,8 +44,8 @@ class API {
     class func register(firstname: String,lastname: String,email: String, password: String,completion: @escaping (_ error: Error?, _ success: Bool)->Void) {
         
         
-        let url = "https://monivulation.azurewebsites.net/users"
-        
+        let url = URLS.register
+
         let parameters  = [
             "firstName": firstname,
             "lastName": lastname,

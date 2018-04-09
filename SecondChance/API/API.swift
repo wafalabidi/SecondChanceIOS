@@ -1,23 +1,21 @@
-//
-//  API.swift
-//  SecondChance
-//
-//  Created by macbook on 14/03/2018.
-//  Copyright © 2018 Wafe. All rights reserved.
-//
-
-import UIKit
-import Alamofire
-import SwiftyJSON
-
-
-class API: NSObject {
+ //
+ //  API.swift
+ //  SecondChance
+ //
+ //  Created by macbook on 14/03/2018.
+ //  Copyright © 2018 Wafe. All rights reserved.
+ //
+ 
+ import UIKit
+ import Alamofire
+ import SwiftyJSON
+ 
+ 
+ class API: NSObject {
     
     class func login(email: String, password: String, completion: @escaping (_ error: Error?, _ success: Bool)->Void) {
-        
-        
         let url = URLS.login
-
+        
         let parameters = [
             "email": email,
             "password": password
@@ -34,18 +32,15 @@ class API: NSObject {
                 case .success(let value):
                     print(value)
                     completion(nil,true)
-                    
                 }
-                
         }
-        
     }
     
     class func register(firstname: String,lastname: String,email: String, password: String,completion: @escaping (_ error: Error?, _ success: Bool)->Void) {
         
         
         let url = URLS.register
-
+        
         let parameters  = [
             "firstName": firstname,
             "lastName": lastname,
@@ -66,9 +61,9 @@ class API: NSObject {
                     completion(nil,false)
                     
                 }
-                
         }
-        
     }
-}
-
+    
+    
+ }
+ 

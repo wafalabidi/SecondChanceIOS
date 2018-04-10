@@ -18,4 +18,6 @@ struct URLS {
     static let register = main + "users"
     //Post{id}
     static let getLikeMatchResumeList = main + "likeMatch/getLikeMatchResumeList"
+    //Post{sourceUserId,targetUserId}
+    static let getMessageList = main + "message/getMessageList"
 }

@@ -29,7 +29,9 @@
 		40BA6D392072B49E0093BFD1 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA6D382072B49E0093BFD1 /* Message.swift */; };
 		40BA6D3C2072B50A0093BFD1 /* Helper Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA6D3B2072B50A0093BFD1 /* Helper Files.swift */; };
 		40BA6D3E2072B5530093BFD1 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA6D3D2072B5530093BFD1 /* Conversation.swift */; };
-		40BA6D402072B9DE0093BFD1 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA6D3F2072B9DE0093BFD1 /* MessageTableViewCell.swift */; };
+		843B2838207C0ADA0009B408 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B2837207C0ADA0009B408 /* MessageTableViewCell.swift */; };
+		843B283C207C123B0009B408 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B283B207C123B0009B408 /* ChatViewController.swift */; };
+		843B283E207C45B40009B408 /* MessageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B283D207C45B40009B408 /* MessageAPI.swift */; };
 		84D4FD07207B98F2000EE637 /* LikeMatchResume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4FD06207B98F2000EE637 /* LikeMatchResume.swift */; };
 		84D4FD0C207BB7D7000EE637 /* LikeMatchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4FD0A207BB420000EE637 /* LikeMatchAPI.swift */; };
 		84E99FFC207AAE3200E1C7C4 /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FFB207AAE3200E1C7C4 /* MatchTableViewCell.swift */; };
@@ -63,8 +65,10 @@
 		40BA6D382072B49E0093BFD1 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		40BA6D3B2072B50A0093BFD1 /* Helper Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper Files.swift"; sourceTree = "<group>"; };
 		40BA6D3D2072B5530093BFD1 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
-		40BA6D3F2072B9DE0093BFD1 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		41748A2EAFA981699AB1DC73 /* Pods-SecondChance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondChance.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance.release.xcconfig"; sourceTree = "<group>"; };
+		843B2837207C0ADA0009B408 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		843B283B207C123B0009B408 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		843B283D207C45B40009B408 /* MessageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAPI.swift; sourceTree = "<group>"; };
 		84D4FD06207B98F2000EE637 /* LikeMatchResume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeMatchResume.swift; sourceTree = "<group>"; };
 		84D4FD0A207BB420000EE637 /* LikeMatchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeMatchAPI.swift; sourceTree = "<group>"; };
 		84E99FFB207AAE3200E1C7C4 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
@@ -131,9 +135,10 @@
 				408C9F772058D7EC006F67EE /* HomeViewController.swift */,
 				40965F65206D138400F42419 /* FirstLoginViewController.swift */,
 				40A6E106206FE88D00C7F90F /* ImageGrid.swift */,
-				40BA6D3F2072B9DE0093BFD1 /* MessageTableViewCell.swift */,
 				84E99FFB207AAE3200E1C7C4 /* MatchTableViewCell.swift */,
 				84E99FFD207AB43900E1C7C4 /* MatchTableViewController.swift */,
+				843B2837207C0ADA0009B408 /* MessageTableViewCell.swift */,
+				843B283B207C123B0009B408 /* ChatViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				40450B942059131D00377FCA /* API.swift */,
 				40A870AE2077867300F1AC3B /* Config.swift */,
 				84D4FD0A207BB420000EE637 /* LikeMatchAPI.swift */,
+				843B283D207C45B40009B408 /* MessageAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -225,7 +231,6 @@
 				4024CACC2056F1220051836E /* Frameworks */,
 				4024CACD2056F1220051836E /* Resources */,
 				387BDD365FF63C9C1A799605 /* [CP] Embed Pods Frameworks */,
-				0B2D58E37FB03AEDAF5E4F0D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -286,21 +291,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B2D58E37FB03AEDAF5E4F0D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		387BDD365FF63C9C1A799605 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +300,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
@@ -320,6 +312,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
@@ -358,10 +352,12 @@
 			files = (
 				408C9F742058D7D5006F67EE /* PorfileViewController.swift in Sources */,
 				408C9F6D20587C76006F67EE /* LoginViewController.swift in Sources */,
+				843B283C207C123B0009B408 /* ChatViewController.swift in Sources */,
 				4024CAD52056F1220051836E /* ViewController.swift in Sources */,
 				40BA6D3E2072B5530093BFD1 /* Conversation.swift in Sources */,
 				40A870AF2077867300F1AC3B /* Config.swift in Sources */,
 				84E99FFE207AB43900E1C7C4 /* MatchTableViewController.swift in Sources */,
+				843B283E207C45B40009B408 /* MessageAPI.swift in Sources */,
 				408C9F782058D7EC006F67EE /* HomeViewController.swift in Sources */,
 				40BA6D3C2072B50A0093BFD1 /* Helper Files.swift in Sources */,
 				84D4FD0C207BB7D7000EE637 /* LikeMatchAPI.swift in Sources */,
@@ -370,10 +366,10 @@
 				4024CAD32056F1220051836E /* AppDelegate.swift in Sources */,
 				40965F66206D138400F42419 /* FirstLoginViewController.swift in Sources */,
 				40BA6D372072B44E0093BFD1 /* User.swift in Sources */,
+				843B2838207C0ADA0009B408 /* MessageTableViewCell.swift in Sources */,
 				40BA6D392072B49E0093BFD1 /* Message.swift in Sources */,
 				84E99FFC207AAE3200E1C7C4 /* MatchTableViewCell.swift in Sources */,
 				40A6E107206FE88D00C7F90F /* ImageGrid.swift in Sources */,
-				40BA6D402072B9DE0093BFD1 /* MessageTableViewCell.swift in Sources */,
 				40450B952059131D00377FCA /* API.swift in Sources */,
 				408C9F762058D7DE006F67EE /* MessageViewController.swift in Sources */,
 				84D4FD07207B98F2000EE637 /* LikeMatchResume.swift in Sources */,

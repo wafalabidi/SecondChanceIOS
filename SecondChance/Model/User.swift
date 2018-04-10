@@ -16,7 +16,8 @@ class User: NSObject {
     let id: String
     var profilePic: UIImage
     
-    //MARK: Inits
+    
+    //MARK: Inits    
     init(name: String, email: String, id: String, profilePic: UIImage) {
         self.name = name
         self.email = email

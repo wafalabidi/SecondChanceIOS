@@ -13,6 +13,9 @@ pod 'Alamofire'
 pod 'AlamofireImage'
 pod 'RAMAnimatedTabBarController'
 pod 'SwiftyJSON'
-pod "WARangeSlider"
+pod 'ObjectMapper', '~> 3.1'
+pod 'AlamofireObjectMapper', '~> 5.0'
+#pod 'WARangeSlider'
+
 
 end

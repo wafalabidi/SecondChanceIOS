@@ -3,13 +3,10 @@ import UIKit
 class MatchTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //MARK: Properties
-    
     var likeMatchResumes = [LikeMatchResume]()
-    
     @IBOutlet var likeMatchResumeTableView: UITableView!
     
     //MARK: Private Methods
-    
     private func loadLikeMatchResumes(){
         let mockPhoto = UIImage(named : "763")
         /*let likeMatchResume1 = LikeMatchResume(id: 2, name: "Mehdi", lastMessage: "Hello", lastMessageSender: true, nbrUnseenMessage: 0, photo: mockPhoto)
@@ -28,8 +25,6 @@ class MatchTableViewController: UIViewController, UITableViewDelegate, UITableVi
                 }
             }
         }
-        
-        
     }
     
     override func viewDidLoad() {

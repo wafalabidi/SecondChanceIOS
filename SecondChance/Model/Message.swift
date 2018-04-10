@@ -1,30 +1,45 @@
-//
-//  Message.swift
-//  SecondChance
-//
-//  Created by macbook on 02/04/2018.
-//  Copyright © 2018 Wafe. All rights reserved.
-//
+import ObjectMapper
 
-import UIKit
-
-class Message: NSObject {
+class Message:Mappable {
     //MARK: Properties
-    var owner: MessageOwner
-    var type: MessageType
-    var content: Any
-    var timestamp: Int
-    var isRead: Bool
-    var image: UIImage?
-    private var toID: String?
-    private var fromID: String?
+    var id: Int = 0
+    var sendingDate: Date = Date()
+    var text: String = ""
+    var seeingDate: Date = Date()
+    var isSeen: Bool = false
+    var sourceUser: User?
+    var targetUser: User?
+    var isSender: Bool = false
     
     //MARK: Inits
-    init(type: MessageType, content: Any, owner: MessageOwner, timestamp: Int, isRead: Bool) {
-        self.type = type
-        self.content = content
-        self.owner = owner
-        self.timestamp = timestamp
-        self.isRead = isRead
+    required init?(map: Map) {
+        
     }
+    
+    // Mappable
+    func mapping(map: Map) {
+        id <- map["id"]
+        sendingDate <- (map["sendingDate"], DateTransform())
+        text <- map["text"]
+        seeingDate <- (map["seeingDate"], DateTransform())
+        isSeen <- map["seen"]
+        sourceUser <- map["sourceUser"]
+        targetUser <- map["targetUser"]
+        isSender <- map["sender"]
+    }
+    
+    init(id: Int, sendingDate: Date, text: String, seeingDate: Date, isSeen: Bool, sourceUser: User, targetUser: User, isSender: Bool) {
+        self.id = id
+        self.sendingDate = sendingDate
+        self.text = text
+        self.seeingDate = seeingDate
+        self.isSeen = isSeen
+        self.sourceUser = sourceUser
+        self.targetUser = targetUser
+        self.isSender = isSender
+    }
+    
+    
+    
+    
 }

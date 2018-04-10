@@ -2,6 +2,10 @@ PODS:
   - Alamofire (4.7.0)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
+  - AlamofireObjectMapper (5.0.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.0)
+  - ObjectMapper (3.1.0)
   - RAMAnimatedTabBarController (3.0.4)
   - SwiftyJSON (4.0.0)
   - TextFieldEffects (1.4.0)
@@ -11,21 +15,37 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
+  - AlamofireObjectMapper (~> 5.0)
+  - ObjectMapper (~> 3.1)
   - RAMAnimatedTabBarController
   - SwiftyJSON
   - TextFieldEffects
   - TransitionButton
   - WARangeSlider
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireObjectMapper
+    - ObjectMapper
+    - RAMAnimatedTabBarController
+    - SwiftyJSON
+    - TextFieldEffects
+    - TransitionButton
+    - WARangeSlider
+
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   RAMAnimatedTabBarController: f4df798eb3f374b80448908d3a18586421efb8f6
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
   TransitionButton: 0bf7e5ffe80030f9d10d57983a04acf2f511998a
   WARangeSlider: 54b3e0853b8d16c444fd539005901aecee86837d
 
-PODFILE CHECKSUM: 17fade70623f3e470d5fefdbf68cda5642e3fd1b
+PODFILE CHECKSUM: b21a8bb0f5a99a20e6c6f680d6fc8128d061658c
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dp8-A0-a3k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JFI-Bc-VWQ">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -919,6 +919,7 @@
                                     <outlet property="nameLabel" destination="KHC-id-t9H" id="2vn-Wk-qnB"/>
                                     <outlet property="nbrUnseenMessagesLabel" destination="8IT-VA-OwM" id="wHs-QO-evS"/>
                                     <outlet property="photoImageView" destination="sEL-bb-alz" id="PS3-Mi-P3w"/>
+                                    <segue destination="dp8-A0-a3k" kind="show" identifier="ShowConversation" id="AaQ-vY-jUd"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

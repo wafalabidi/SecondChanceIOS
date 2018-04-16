@@ -1,9 +1,11 @@
 import UIKit
+import os.log
 
 class MatchTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //MARK: Properties
     var likeMatchResumes = [LikeMatchResume]()
+    var userId = 1
     @IBOutlet var likeMatchResumeTableView: UITableView!
     
     //MARK: Private Methods
@@ -14,7 +16,7 @@ class MatchTableViewController: UIViewController, UITableViewDelegate, UITableVi
          
          likeMatchResumes += [likeMatchResume1,likeMatchResume2]
          */
-        LikeMatchAPI.getLikeMatchResume(userId: 3) { (error: Error?, serviceLikeMatchResumes: [LikeMatchResume]?) in
+        LikeMatchAPI.getLikeMatchResume(userId: userId) { (error: Error?, serviceLikeMatchResumes: [LikeMatchResume]?) in
             if let serviceLikeMatchResumes = serviceLikeMatchResumes {
                 for likeMatchResume  in serviceLikeMatchResumes {
                     likeMatchResume.photo = mockPhoto
@@ -139,14 +141,34 @@ class MatchTableViewController: UIViewController, UITableViewDelegate, UITableVi
      }
      */
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        switch(segue.identifier ?? "") {
+        case "ShowConversation" :
+            guard let chatViewController = segue.destination as? ChatViewController else {
+                fatalError("Unexpected destination: \(segue.destination)")
+            }
+            
+            guard let selectedLikeMatchCell = sender as? MatchTableViewCell else {
+                fatalError("Unexpected sender: \(String(describing: sender))")
+            }
+            /*
+            guard let indexPath = likeMatchResumeTableView.indexPath(for: selectedLikeMatchCell) else {
+                fatalError("The selected cell is not being displayed by the table")
+            }
+            
+            let selectedLikeMatchResume = likeMatchResumes[indexPath.row]*/
+            chatViewController.sourceUserId = userId
+            chatViewController.targetUserId = selectedLikeMatchCell.id
+        default:
+            fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+            
+        }
+    }
+    
     
 }

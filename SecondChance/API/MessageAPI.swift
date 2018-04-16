@@ -7,15 +7,15 @@
  class MessageAPI: NSObject {
     
     
-    class func getMessages (targetUserId: Int,sourceUserId: Int,completion: @escaping (_ error: Error?, _ messages:[Message]?)->Void) {
+    class func getMessages (sourceUserId: Int, targetUserId: Int,completion: @escaping (_ error: Error?, _ messages:[Message]?)->Void) {
         let url = URLS.getMessageList
         
         let parameters: [String: Any] = [
             "sourceUser" : [
-                "id" : 1
+                "id" : sourceUserId
             ],
             "targetUser" : [
-                "id" : 3
+                "id" : targetUserId
             ]
         ]
         

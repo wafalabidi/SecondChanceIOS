@@ -12,19 +12,17 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     //MARK: Properties
     var messages = [Message]()
+    var sourceUserId = 0
+    var targetUserId = 0
+    var targetUserPhoto = UIImage(named : "763")
+    var targetUserName = "Foulen"
     @IBOutlet var chatTableView: UITableView!
     
     //MARK: Private Methods
     private func loadMessages(){
-        let mockPhoto = UIImage(named : "763")
-        /*
-        let user1 = User(name: "Bacem", email: "bacem@hotmail", id: "1", profilePic: mockPhoto!)
-        let message1 = Message(id: 1, sendingDate: Date(), text: "SALAM", seeingDate: Date(), isSeen: false, sourceUser: user1, targetUser: user1, isSender: true)
-        let message2 = Message(id: 1, sendingDate: Date(), text: "HALLO", seeingDate: Date(), isSeen: false, sourceUser: user1, targetUser: user1, isSender: false)
-
-        messages += [message1,message2]
-*/
-        MessageAPI.getMessages(targetUserId: 1, sourceUserId: 3){ (error: Error?, serviceMessages: [Message]?) in
+        
+        
+        MessageAPI.getMessages(sourceUserId: sourceUserId,targetUserId: targetUserId){ (error: Error?, serviceMessages: [Message]?) in
             if let serviceMessages = serviceMessages {
                 for message  in serviceMessages {
                     self.messages.append(message)

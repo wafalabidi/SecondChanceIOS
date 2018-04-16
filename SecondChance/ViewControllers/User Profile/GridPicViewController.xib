@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GridPicViewController" customModule="SecondChance" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="450"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VQv-e0-2ap">
+                    <rect key="frame" x="8" y="10" width="311" height="135"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="JC7-4h-7OC">
+                            <rect key="frame" x="0.0" y="0.0" width="151.5" height="135"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="135" id="zST-qB-A3q"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="4WB-eK-CVs">
+                            <rect key="frame" x="159.5" y="0.0" width="151.5" height="135"/>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ar9-bk-FR5">
+                    <rect key="frame" x="8" y="153" width="311" height="135"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="Zt8-qM-9Vi">
+                            <rect key="frame" x="0.0" y="0.0" width="151.5" height="135"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="135" id="pTA-IT-1M0"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="r3r-hO-l8y">
+                            <rect key="frame" x="159.5" y="0.0" width="151.5" height="135"/>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OEv-RM-fVc">
+                    <rect key="frame" x="8" y="296" width="311" height="135"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="EbP-ZX-MD2">
+                            <rect key="frame" x="0.0" y="0.0" width="151.5" height="135"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="135" id="voe-Di-gyL"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="TCB-e1-2o7">
+                            <rect key="frame" x="159.5" y="0.0" width="151.5" height="135"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="135" id="DbG-E0-oh2"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ar9-bk-FR5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Bmb-th-ABz"/>
+                <constraint firstAttribute="trailing" secondItem="ar9-bk-FR5" secondAttribute="trailing" constant="8" id="Hwv-a5-KXL"/>
+                <constraint firstItem="VQv-e0-2ap" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="KaC-YV-2Yo"/>
+                <constraint firstItem="OEv-RM-fVc" firstAttribute="top" secondItem="Zt8-qM-9Vi" secondAttribute="bottom" constant="8" id="Pcy-U9-0Oc"/>
+                <constraint firstItem="ar9-bk-FR5" firstAttribute="top" secondItem="VQv-e0-2ap" secondAttribute="bottom" constant="8" id="g9g-LF-Bax"/>
+                <constraint firstItem="VQv-e0-2ap" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="jp2-Xr-l1B"/>
+                <constraint firstAttribute="trailing" secondItem="OEv-RM-fVc" secondAttribute="trailing" constant="8" id="nPK-ul-ytx"/>
+                <constraint firstItem="OEv-RM-fVc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="xS3-Zn-ekJ"/>
+                <constraint firstItem="VQv-e0-2ap" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yOi-lC-6LS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="8.5" y="-13"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder-image" width="300" height="225"/>
+    </resources>
+</document>

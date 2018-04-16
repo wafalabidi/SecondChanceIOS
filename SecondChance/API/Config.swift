@@ -14,5 +14,6 @@ struct URLS {
     //Post{email,password}
     static let login = main + "login"
     //Post{email,passowrd,firstname,lastname,bithdate}
-    static let register = main + "users"
+    static let register = main + "registration"
+    
 }

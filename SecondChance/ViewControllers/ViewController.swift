@@ -20,15 +20,16 @@ class ViewController: UIViewController {
         loginButton.isHidden = true
     }
     
+    
     @IBAction func login(_ sender: UIButton) {
         signUpButton.isHidden = true
         loginButton.isHidden = true
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
        
     }
-
 
 
 }

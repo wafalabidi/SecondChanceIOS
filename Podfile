@@ -14,5 +14,8 @@ pod 'AlamofireImage'
 pod 'RAMAnimatedTabBarController'
 pod 'SwiftyJSON'
 pod "WARangeSlider"
+pod 'UnderLineTextField', '~> 2.0'
+pod 'BEMCheckBox'
+pod 'AORangeSlider', '~> 1.0'
 
 end

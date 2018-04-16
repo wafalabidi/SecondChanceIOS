@@ -9,6 +9,8 @@
 import UIKit
 import TransitionButton
 import RAMAnimatedTabBarController
+import TextFieldEffects
+
 class LoginViewController: UIViewController {
     //MARK:Prepreties
     private var idx: Int = 0
@@ -16,6 +18,7 @@ class LoginViewController: UIViewController {
     //MARK : Outlets
     @IBOutlet weak var logButton: TransitionButton!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var emailLabel: HoshiTextField!
     
     //MARK: Actions
     

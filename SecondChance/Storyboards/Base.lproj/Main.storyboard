@@ -993,6 +993,9 @@
                                     <constraint firstAttribute="height" constant="92" id="rA3-bm-fOc"/>
                                 </constraints>
                                 <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendNewMessage:" destination="dp8-A0-a3k" eventType="touchUpInside" id="ZdH-7w-X67"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="763" translatesAutoresizingMaskIntoConstraints="NO" id="OXF-dk-Whb">
                                 <rect key="frame" x="20" y="20" width="75" height="76"/>
@@ -1043,6 +1046,8 @@
                     </view>
                     <connections>
                         <outlet property="chatTableView" destination="geW-FI-i0n" id="cni-Uk-UQg"/>
+                        <outlet property="newMessageTextField" destination="0PJ-0j-rmW" id="7ef-N4-IOQ"/>
+                        <outlet property="targetUserNameLabel" destination="gNg-gk-2GD" id="oPU-zE-OCv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kue-y5-egf" userLabel="First Responder" sceneMemberID="firstResponder"/>

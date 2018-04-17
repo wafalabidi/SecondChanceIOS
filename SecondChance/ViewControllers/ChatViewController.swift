@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextViewDelegate {
 
     //MARK: Properties
     var messages = [Message]()
@@ -17,6 +17,11 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     var targetUserPhoto = UIImage(named : "763")
     var targetUserName = "Foulen"
     @IBOutlet var chatTableView: UITableView!
+    @IBOutlet weak var targetUserNameLabel: UILabel!
+    @IBOutlet weak var newMessageTextField: UITextView!
+    
+    var messageText = ""
+    
     
     //MARK: Private Methods
     private func loadMessages(){
@@ -24,15 +29,24 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         MessageAPI.getMessages(sourceUserId: sourceUserId,targetUserId: targetUserId){ (error: Error?, serviceMessages: [Message]?) in
             if let serviceMessages = serviceMessages {
+                self.messages = []
                 for message  in serviceMessages {
                     self.messages.append(message)
                 }
                 DispatchQueue.main.async {
                     self.chatTableView.reloadData()
+                    self.scrollToBottom()
                 }
             }
         }
         
+    }
+    
+    func scrollToBottom(){
+        DispatchQueue.main.async {
+            let indexPath = IndexPath(row: self.messages.count-1, section: 0)
+            self.chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+        }
     }
     
     
@@ -41,10 +55,14 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         chatTableView.dataSource = self
         chatTableView.delegate = self
+        newMessageTextField.delegate = self
         chatTableView.estimatedRowHeight = 300
         chatTableView.rowHeight = UITableViewAutomaticDimension
         
+        targetUserNameLabel.text = targetUserName
+        
         loadMessages()
+        
         
         }
 
@@ -79,56 +97,32 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.messageLabel.text = message.text
         if (message.isSender){
             cell.messageLabel.textAlignment = NSTextAlignment.right
+        }else{
+            cell.messageLabel.textAlignment = NSTextAlignment.left
         }
         
         
         return cell
     }
+    //MARK: UITextFieldDelegate
+    func textViewShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        newMessageTextField.resignFirstResponder()
+        return true
+    }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    private func textViewDidEndEditing(_ textField: UITextField) {
+        messageText = newMessageTextField.text
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    // MARK: Actions
+    
+    @IBAction func sendNewMessage(_ sender: UIButton) {
+        MessageAPI.saveNewMessage(text: "messageText", sourceUserId: sourceUserId, targetUserId: targetUserId){
+            (error: Error?) in
+            self.loadMessages()
+        }
+        
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

@@ -20,4 +20,8 @@ struct URLS {
     static let getLikeMatchResumeList = main + "likeMatch/getLikeMatchResumeList"
     //Post{sourceUserId,targetUserId}
     static let getMessageList = main + "message/getMessageList"
+    //Post{sourceUserId,targetUserId}
+    static let markMessageListAsSeen = main + "message/markMessageListAsSeen"
+    //Post{text,sourceUserId,targetUserId}
+    static let saveNewMessage = main + "message/saveNewMessage"
 }

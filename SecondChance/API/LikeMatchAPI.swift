@@ -11,7 +11,7 @@
         let url = URLS.getLikeMatchResumeList
         
         let parameters: [String: Any] = [
-            "id" : 1
+            "id" : userId
         ]
         
         print("***********************************LikeMatchResumeList")

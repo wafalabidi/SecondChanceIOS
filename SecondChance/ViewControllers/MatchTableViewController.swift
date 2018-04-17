@@ -5,7 +5,7 @@ class MatchTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     //MARK: Properties
     var likeMatchResumes = [LikeMatchResume]()
-    var userId = 1
+    var userId = 11
     @IBOutlet var likeMatchResumeTableView: UITableView!
     
     //MARK: Private Methods
@@ -164,6 +164,8 @@ class MatchTableViewController: UIViewController, UITableViewDelegate, UITableVi
             let selectedLikeMatchResume = likeMatchResumes[indexPath.row]*/
             chatViewController.sourceUserId = userId
             chatViewController.targetUserId = selectedLikeMatchCell.id
+            chatViewController.targetUserName = selectedLikeMatchCell.nameLabel.text!
+            MessageAPI.markMessageListAsSeen(sourceUserId: chatViewController.targetUserId, targetUserId: userId)
         default:
             fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
             

@@ -18,7 +18,7 @@ class UserInfoViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        hexagonalButton(hello: buttonShape)
+        hexagonalButton(button: buttonShape)
 
         // Do any additional setup after loading the view.
     }

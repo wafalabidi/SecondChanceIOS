@@ -4,6 +4,7 @@ PODS:
     - Alamofire (~> 4.5)
   - AORangeSlider (1.0.1)
   - BEMCheckBox (1.4.1)
+  - DLRadioButton (1.4.11)
   - RAMAnimatedTabBarController (3.0.4)
   - SwiftyJSON (4.0.0)
   - TextFieldEffects (1.4.0)
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - AlamofireImage
   - AORangeSlider (~> 1.0)
   - BEMCheckBox
+  - DLRadioButton (~> 1.4)
   - RAMAnimatedTabBarController
   - SwiftyJSON
   - TextFieldEffects
@@ -28,6 +30,7 @@ SPEC CHECKSUMS:
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
   AORangeSlider: a5ec9ce6815cee8ae9fc6c6286f910ea12cd822a
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  DLRadioButton: 0d04b8259e7bfd886571a1e9173c73fee7118f50
   RAMAnimatedTabBarController: f4df798eb3f374b80448908d3a18586421efb8f6
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
@@ -35,6 +38,6 @@ SPEC CHECKSUMS:
   UnderLineTextField: e3c9640e3a3fe529a617ee217f5d8386b8e8440c
   WARangeSlider: 54b3e0853b8d16c444fd539005901aecee86837d
 
-PODFILE CHECKSUM: 4eba2c574061876bf0acd6f42aa1404a112dc298
+PODFILE CHECKSUM: 6cc34e7f63815a10f0440a0783620536d264779b
 
 COCOAPODS: 1.4.0

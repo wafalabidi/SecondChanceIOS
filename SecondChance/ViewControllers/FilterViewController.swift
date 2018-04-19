@@ -27,20 +27,22 @@ class FilterViewController: UIViewController {
     @IBOutlet weak var noCheckBox: BEMCheckBox!
     @IBOutlet weak var ageRange: AORangeSlider!
     @IBOutlet weak var ageRangeVal: UILabel!
+    @IBOutlet weak var ageValueMin: UILabel!
     //MARK:ACTIONS
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        hexagonalButton(hello: manCheckBox)
-        hexagonalButton(hello: womenCheckBox)
-        hexagonalButton(hello: processDivorceCheckBox)
-        hexagonalButton(hello: divorcedCheckBox)
-        hexagonalButton(hello: neverMariedCheckBox)
-        hexagonalButton(hello: widowerCheckBox)
-        hexagonalButton(hello: yesCheckBox)
-        hexagonalButton(hello: noCheckBox)
+        hexagonalButton(button: manCheckBox)
+        hexagonalButton(button: womenCheckBox)
+        hexagonalButton(button: processDivorceCheckBox)
+        hexagonalButton(button: divorcedCheckBox)
+        hexagonalButton(button: neverMariedCheckBox)
+        hexagonalButton(button: widowerCheckBox)
+        hexagonalButton(button: yesCheckBox)
+        hexagonalButton(button: noCheckBox)
         setupIndicatorSlider()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,13 +53,11 @@ class FilterViewController: UIViewController {
     func setupIndicatorSlider() {
         
         
-        ageRange.minimumValue = 19
-        ageRange.maximumValue = 80
-        ageRange.lowValue = 18
-        ageRange.highValue = 80
-        
-        
-        
+//        ageRange.minimumValue = 0
+//        ageRange.maximumValue = 80
+//        ageRange.lowValue = 19
+//        ageRange.highValue = 80
+//        
         ageRange.valuesChangedHandler = { [weak self] in
             guard let `self` = self else {
                 return
@@ -65,7 +65,8 @@ class FilterViewController: UIViewController {
             
             
             self.ageRangeVal.text = String(Int( self.ageRange.lowValue))
-            //            highLabel.text = String(format: "%.1f", self.indicatorSlider.highValue)
+            self.ageValueMin.text = String(Int(self.ageRange.highValue))
+            
         }
         
     }

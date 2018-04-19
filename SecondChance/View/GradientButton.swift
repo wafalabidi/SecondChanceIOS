@@ -8,6 +8,7 @@
 
 import UIKit
 @IBDesignable
+
 class GradientButton: UIButton {
     
     @IBInspectable var cornerRadius: CGFloat = 0.0 {

@@ -229,6 +229,6 @@
         </view>
     </objects>
     <resources>
-        <image name="check-mark" width="32" height="32"/>
+        <image name="check-mark" width="21" height="21"/>
     </resources>
 </document>

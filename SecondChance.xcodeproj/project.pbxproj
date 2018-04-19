@@ -86,6 +86,13 @@
 		40FD6A72208392660081A2E0 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		40FD6A73208392660081A2E0 /* UserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
 		41748A2EAFA981699AB1DC73 /* Pods-SecondChance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondChance.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance.release.xcconfig"; sourceTree = "<group>"; };
+		843B2837207C0ADA0009B408 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		843B283B207C123B0009B408 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		843B283D207C45B40009B408 /* MessageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAPI.swift; sourceTree = "<group>"; };
+		84D4FD06207B98F2000EE637 /* LikeMatchResume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeMatchResume.swift; sourceTree = "<group>"; };
+		84D4FD0A207BB420000EE637 /* LikeMatchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeMatchAPI.swift; sourceTree = "<group>"; };
+		84E99FFB207AAE3200E1C7C4 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
+		84E99FFD207AB43900E1C7C4 /* MatchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewController.swift; sourceTree = "<group>"; };
 		A7CC323DF24BB0AFF9FD2571 /* Pods_SecondChance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecondChance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B3031D893A9BD685F4C014 /* Pods-SecondChance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondChance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -414,6 +421,7 @@
 				40BA6D362072B44E0093BFD1 /* User.swift */,
 				40BA6D382072B49E0093BFD1 /* Message.swift */,
 				40BA6D3D2072B5530093BFD1 /* Conversation.swift */,
+				84D4FD06207B98F2000EE637 /* LikeMatchResume.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -492,7 +500,6 @@
 				4024CACC2056F1220051836E /* Frameworks */,
 				4024CACD2056F1220051836E /* Resources */,
 				387BDD365FF63C9C1A799605 /* [CP] Embed Pods Frameworks */,
-				0B2D58E37FB03AEDAF5E4F0D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -554,21 +561,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B2D58E37FB03AEDAF5E4F0D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SecondChance/Pods-SecondChance-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		387BDD365FF63C9C1A799605 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -660,6 +652,7 @@
 				40BA6D402072B9DE0093BFD1 /* MessageTableViewCell.swift in Sources */,
 				40450B952059131D00377FCA /* API.swift in Sources */,
 				408C9F762058D7DE006F67EE /* MessageViewController.swift in Sources */,
+				84D4FD07207B98F2000EE637 /* LikeMatchResume.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

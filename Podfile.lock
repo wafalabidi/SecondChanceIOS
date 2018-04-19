@@ -25,6 +25,18 @@ DEPENDENCIES:
   - UnderLineTextField (~> 2.0)
   - WARangeSlider
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireObjectMapper
+    - ObjectMapper
+    - RAMAnimatedTabBarController
+    - SwiftyJSON
+    - TextFieldEffects
+    - TransitionButton
+    - WARangeSlider
+
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
@@ -40,4 +52,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 6cc34e7f63815a10f0440a0783620536d264779b
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0

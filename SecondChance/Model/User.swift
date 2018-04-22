@@ -26,6 +26,8 @@ class User: NSObject {
     var id: Int
     var profilePic: String
     var liveAlone: Bool
+    var age : Int
+    
 
     
     //MARK: Inits
@@ -34,6 +36,7 @@ class User: NSObject {
         
         guard let dict = json,
             let id = dict["id"] as? Int,
+            let age = dict["age"] as? Int,
             let email = dict["email"] as? String,
             let name = dict["name"] as? String,
             let lastname = dict["lastName"] as? String,
@@ -52,6 +55,7 @@ class User: NSObject {
             else {fatalError() }
         
         self.id = id
+        self.age = age
         self.email = email
         self.name = name
         self.lastName = lastname

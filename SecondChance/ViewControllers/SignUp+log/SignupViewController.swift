@@ -59,6 +59,7 @@ class SignupViewController: UIViewController {
     
     @IBAction func sexButtonAction(_ sender: DLRadioButton) {
         if sender.tag == 1 {
+            print("1")
         } else {
 
         }

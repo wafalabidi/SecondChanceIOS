@@ -13,9 +13,14 @@ pod 'Alamofire'
 pod 'AlamofireImage'
 pod 'RAMAnimatedTabBarController'
 pod 'SwiftyJSON'
-pod "WARangeSlider"
 pod 'UnderLineTextField', '~> 2.0'
-pod 'BEMCheckBox'
-pod 'AORangeSlider', '~> 1.0'
 pod 'DLRadioButton', '~> 1.4'
+pod 'ObjectMapper', '~> 3.1'
+pod 'AlamofireObjectMapper', '~> 5.0'
+pod 'RangeSeekSlider'
+pod 'Planet'
+pod 'M13Checkbox'
+pod 'Koloda', '~> 4.3.1'
+
+
 end

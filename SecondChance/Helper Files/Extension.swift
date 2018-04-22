@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftyJSON
 
 extension UIBezierPath {
     
@@ -56,6 +57,8 @@ extension UIBezierPath {
     }
     
 }
+
+
 extension String {
     
     var trimmed: String {
@@ -63,3 +66,50 @@ extension String {
     }
     
 }
+
+extension UIImageView {
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
+}
+
+extension JSON {
+    
+    var toBool: Bool? {
+        if let bool = self.bool { return bool }
+        if let int = self.toInt {
+            if int == 0 {
+                return false
+            } else if int == 1 {
+                return true
+            }
+        }
+        
+        return nil
+    }
+    
+    var toInt: Int? {
+        if let int = self.int { return int }
+        if let string = self.string, let int = Int(string) {
+            return int
+        }
+        
+        return nil
+    }
+    
+    var toImagePath: String? {
+        guard let string = self.string, !string.isEmpty else { return nil }
+        
+        return URLS.file_root + string
+    }
+    
+}
+

@@ -2,54 +2,56 @@ PODS:
   - Alamofire (4.7.0)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
-  - AORangeSlider (1.0.1)
-  - BEMCheckBox (1.4.1)
+  - AlamofireObjectMapper (5.0.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.0)
   - DLRadioButton (1.4.11)
+  - Koloda (4.3.1):
+    - pop (~> 1.0)
+  - M13Checkbox (3.2.2)
+  - ObjectMapper (3.1.0)
+  - Planet (0.3.1)
+  - pop (1.0.10)
   - RAMAnimatedTabBarController (3.0.4)
+  - RangeSeekSlider (1.7.0)
   - SwiftyJSON (4.0.0)
   - TextFieldEffects (1.4.0)
   - TransitionButton (0.3.0)
   - UnderLineTextField (2.0.7)
-  - WARangeSlider (1.1.1)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
-  - AORangeSlider (~> 1.0)
-  - BEMCheckBox
+  - AlamofireObjectMapper (~> 5.0)
   - DLRadioButton (~> 1.4)
+  - Koloda (~> 4.3.1)
+  - M13Checkbox
+  - ObjectMapper (~> 3.1)
+  - Planet
   - RAMAnimatedTabBarController
+  - RangeSeekSlider
   - SwiftyJSON
   - TextFieldEffects
   - TransitionButton
   - UnderLineTextField (~> 2.0)
-  - WARangeSlider
-
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - Alamofire
-    - AlamofireImage
-    - AlamofireObjectMapper
-    - ObjectMapper
-    - RAMAnimatedTabBarController
-    - SwiftyJSON
-    - TextFieldEffects
-    - TransitionButton
-    - WARangeSlider
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
-  AORangeSlider: a5ec9ce6815cee8ae9fc6c6286f910ea12cd822a
-  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
   DLRadioButton: 0d04b8259e7bfd886571a1e9173c73fee7118f50
+  Koloda: 0d39b2aa188ccd1fac48d752acaf9802e683c625
+  M13Checkbox: a8c2491cfbbca10797925fd0b9154a782bf40d89
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  Planet: 8366988beff4e7b86c7530f67ce0172738c6ea24
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   RAMAnimatedTabBarController: f4df798eb3f374b80448908d3a18586421efb8f6
+  RangeSeekSlider: 0386c5a9aa5ebcb2fa5238e8a627280cf46c7c0a
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
   TransitionButton: 0bf7e5ffe80030f9d10d57983a04acf2f511998a
   UnderLineTextField: e3c9640e3a3fe529a617ee217f5d8386b8e8440c
-  WARangeSlider: 54b3e0853b8d16c444fd539005901aecee86837d
 
-PODFILE CHECKSUM: 6cc34e7f63815a10f0440a0783620536d264779b
+PODFILE CHECKSUM: 2f996375fa780dfacaa64aac176200acce96d752
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.4.0
